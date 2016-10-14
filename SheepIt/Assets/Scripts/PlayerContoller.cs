@@ -4,7 +4,9 @@ using System.Collections;
 
 public class PlayerContoller : NetworkBehaviour {
 
-	// Use this for initialization
+    public float movingSpeed = 10f;
+    
+    // Use this for initialization
 	void Start () {
 	
 	}
@@ -25,17 +27,23 @@ public class PlayerContoller : NetworkBehaviour {
 
 	void CheckForInput()
 	{
-		if (Input.GetKey (KeyCode.UpArrow) || Input.GetKey(KeyCode.W)){
-			transform.Translate (new Vector3 (0f, 0.05f, 0f));
+        Vector2 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 playerposition = transform.position;
+        Vector2 speed2 = mouseposition - playerposition;
+        speed2.Normalize();
+
+        if (Input.GetKey (KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            GetComponent<Rigidbody2D>().velocity = speed2 * movingSpeed;
 		}
-		if (Input.GetKey (KeyCode.DownArrow)|| Input.GetKey(KeyCode.S)){
-			transform.Translate (new Vector3 (0f, -0.05f, 0f));
-		}
-		if (Input.GetKey (KeyCode.RightArrow)|| Input.GetKey(KeyCode.D)){
-			transform.Translate (new Vector3 (0.05f, 0f, 0f));
-		}
-		if (Input.GetKey (KeyCode.LeftArrow)|| Input.GetKey(KeyCode.A)){
-			transform.Translate (new Vector3 (-0.05f, 0f, 0f));
-		}
+
+        Vector3 movingDir = new Vector3(speed2.x, speed2.y, 0f);
+        float angle = Mathf.Atan2(movingDir.y, movingDir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
 	}
 }
