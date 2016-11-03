@@ -5,13 +5,42 @@ using System.Collections;
 public class PlayerContoller : NetworkBehaviour {
 
     public float movingSpeed = 10f;
-    
-    // Use this for initialization
-	void Start () {
-	
-	}
 
-	public override void OnStartLocalPlayer()
+    [SyncVar]
+    public string username = "Player";
+    [SyncVar]
+    public TextMesh textName = null;
+
+    // Use this for initialization
+    void Start () {
+        textName = GetComponentInChildren<TextMesh>();
+        print(textName.GetComponent<TextMesh>().text);
+    }
+
+    void OnGUI()
+    {
+        if (isLocalPlayer)
+        {
+            username = GUI.TextField(new Rect(25, Screen.height - 40, 100, 25), username);
+            if (GUI.Button(new Rect(130, Screen.height - 40, 30, 25), "Set"))
+            {
+                print("here");
+                CmdSetName(username);
+            }
+        }
+
+    }
+
+
+    [Command]
+    public void CmdSetName(string name)
+    {
+        textName.GetComponent<TextMesh>().text = name;
+        print(textName.GetComponent<TextMesh>().text);
+    }
+
+
+    public override void OnStartLocalPlayer()
 	{
 		GetComponent<SpriteRenderer>().color = Color.blue;
 	}
@@ -21,8 +50,8 @@ public class PlayerContoller : NetworkBehaviour {
 		if (!isLocalPlayer) {
 			return;
 		}
-
-		CheckForInput ();
+        //textName.GetComponent<TextMesh>().text = username;
+        CheckForInput ();
 	}
 
 	void CheckForInput()
@@ -41,7 +70,7 @@ public class PlayerContoller : NetworkBehaviour {
         float angle = Mathf.Atan2(movingDir.y, movingDir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
