@@ -15,7 +15,10 @@ public class PlayerContoller : NetworkBehaviour
     void Start()
 	{
         textName = GetComponentInChildren<TextMesh>();
-        //print(textName.GetComponent<TextMesh>().text);
+
+		Vector3 temp = transform.position;
+		temp.z = -0.1f;
+		transform.position = temp;
     }
 
     void OnGUI()
