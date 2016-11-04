@@ -9,37 +9,18 @@ public class PlayerContoller : NetworkBehaviour
     [SyncVar]
     public string username = "Player";
     [SyncVar]
+    public Color playerColor;
+    [SyncVar]
     public TextMesh textName = null;
 
     // Use this for initialization
     void Start()
 	{
         textName = GetComponentInChildren<TextMesh>();
-
+        textName.text = username;
 		Vector3 temp = transform.position;
 		temp.z = -0.1f;
 		transform.position = temp;
-    }
-
-    void OnGUI()
-    {
-        if (isLocalPlayer)
-        {
-            username = GUI.TextField(new Rect(25, Screen.height - 40, 100, 25), username);
-            if (GUI.Button(new Rect(130, Screen.height - 40, 30, 25), "Set"))
-            {
-                print("here");
-                CmdSetName(username);
-            }
-        }
-
-    }
-
-    [Command]
-    public void CmdSetName(string name)
-    {
-        textName.GetComponent<TextMesh>().text = name;
-        print(textName.GetComponent<TextMesh>().text);
     }
 
 
