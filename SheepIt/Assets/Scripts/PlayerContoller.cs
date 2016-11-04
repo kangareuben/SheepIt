@@ -2,8 +2,8 @@
 using UnityEngine.Networking;
 using System.Collections;
 
-public class PlayerContoller : NetworkBehaviour {
-
+public class PlayerContoller : NetworkBehaviour
+{
     public float movingSpeed = 10f;
 
     [SyncVar]
@@ -12,9 +12,10 @@ public class PlayerContoller : NetworkBehaviour {
     public TextMesh textName = null;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+	{
         textName = GetComponentInChildren<TextMesh>();
-        print(textName.GetComponent<TextMesh>().text);
+        //print(textName.GetComponent<TextMesh>().text);
     }
 
     void OnGUI()
@@ -31,7 +32,6 @@ public class PlayerContoller : NetworkBehaviour {
 
     }
 
-
     [Command]
     public void CmdSetName(string name)
     {
@@ -46,8 +46,10 @@ public class PlayerContoller : NetworkBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (!isLocalPlayer) {
+	void Update()
+	{
+		if(!isLocalPlayer)
+		{
 			return;
 		}
         //textName.GetComponent<TextMesh>().text = username;
