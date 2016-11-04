@@ -18,6 +18,8 @@ public class PlayerContoller : NetworkBehaviour
 	{
         textName = GetComponentInChildren<TextMesh>();
         textName.text = username;
+        textName.color = playerColor;
+
 		Vector3 temp = transform.position;
 		temp.z = -0.1f;
 		transform.position = temp;
@@ -26,7 +28,7 @@ public class PlayerContoller : NetworkBehaviour
 
     public override void OnStartLocalPlayer()
 	{
-		GetComponent<SpriteRenderer>().color = Color.blue;
+		
 	}
 	
 	// Update is called once per frame
