@@ -39,28 +39,53 @@ public class PlayerContoller : NetworkBehaviour
 			return;
 		}
         //textName.GetComponent<TextMesh>().text = username;
-        CheckForInput ();
+        CheckForInput();
+		ClampPosition();
 	}
 
 	void CheckForInput()
 	{
         Vector2 mouseposition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 playerposition = transform.position;
-        Vector2 speed2 = mouseposition - playerposition;
-        speed2.Normalize();
 
-        if (Input.GetKey (KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
-            GetComponent<Rigidbody2D>().velocity = speed2 * movingSpeed;
+		if(Vector2.Distance(mouseposition, playerposition) > 0.05f)
+		{
+			Vector2 speed2 = mouseposition - playerposition;
+			speed2.Normalize();
+
+			if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+			{
+				GetComponent<Rigidbody2D>().velocity = speed2 * movingSpeed;
+			}
+
+			Vector3 movingDir = new Vector3(speed2.x, speed2.y, 0f);
+			float angle = Mathf.Atan2(movingDir.y, movingDir.x) * Mathf.Rad2Deg;
+			transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 		}
-
-        Vector3 movingDir = new Vector3(speed2.x, speed2.y, 0f);
-        float angle = Mathf.Atan2(movingDir.y, movingDir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+		else
+		{
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		}
 
         if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
+	}
+
+	void ClampPosition()
+	{
+		if (transform.position.x < -9f) {
+			transform.position = new Vector3 (-9f, transform.position.y, transform.position.z);
+		}
+		if (transform.position.x > 9f) {
+			transform.position = new Vector3 (9f, transform.position.y, transform.position.z);
+		}
+		if (transform.position.y < -5f) {
+			transform.position = new Vector3 (transform.position.x, -5f, transform.position.z);
+		}
+		if (transform.position.y > 5f) {
+			transform.position = new Vector3 (transform.position.x, 5f, transform.position.z);
+		}
 	}
 }

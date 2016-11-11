@@ -1,167 +1,115 @@
 Initialize engine version: 5.4.0f3 (a6d8d714de6f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.1]
-    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
-    Vendor:   Intel
-    VRAM:     976 MB
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro M1000M (ID=0x13b1)
+    Vendor:   NVIDIA
+    VRAM:     2016 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.086 seconds
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.dll (this message is harmless)
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.271 seconds
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.161081 ms
+UnloadTime: 1.340034 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 386)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.450831 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 795.
+Total: 1.642476 ms (FindLiveObjects: 0.082312 ms CreateObjectMapping: 0.087221 ms MarkObjects: 1.461615 ms  DeleteObjects: 0.010949 ms)
+
 Initialize engine version: 5.4.0f3 (a6d8d714de6f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.1]
-    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
-    Vendor:   Intel
-    VRAM:     976 MB
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro M1000M (ID=0x13b1)
+    Vendor:   NVIDIA
+    VRAM:     2016 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.081 seconds
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.dll (this message is harmless)
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.083 seconds
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Egnyte\Private\reuben\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Initialize engine version: 5.4.0f3 (a6d8d714de6f)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 10.1]
-    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
-    Vendor:   Intel
-    VRAM:     976 MB
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.091 seconds
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Etienne\Documents\GitHub\SheepIt\SheepIt\Builds\SheepIt_Data\Managed\System.dll (this message is harmless)
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-UnloadTime: 0.971435 ms
-<RI> Initialized touch support.
-UnloadTime: 1.019181 ms
+UnloadTime: 1.312471 ms
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 492)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.487456 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 631.
+Total: 1.550724 ms (FindLiveObjects: 0.072873 ms CreateObjectMapping: 0.052861 ms MarkObjects: 1.419326 ms  DeleteObjects: 0.004908 ms)
+
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 492)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
 MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
  
-(Filename:  Line: 386)
+(Filename:  Line: 492)
 
-MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+host id out of bound id {-1} max id should be greater 0 and less than {0}
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+(Filename:  Line: 686)
 
-MatchMakingClient Join :https://mm.unet.unity3d.com/json/reply/JoinMatchRequest
+Host doesn't exist
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-MatchMakingClient Join :https://mm.unet.unity3d.com/json/reply/JoinMatchRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+(Filename:  Line: 1089)
 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 386)
 
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.481793 ms
 
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 797.
+Total: 1.875821 ms (FindLiveObjects: 0.084200 ms CreateObjectMapping: 0.044176 ms MarkObjects: 1.714594 ms  DeleteObjects: 0.032471 ms)
 
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 386)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.555105 ms
-UnloadTime: 0.729580 ms
-UnloadTime: 0.591696 ms
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 958.
-Total: 2.140548 ms (FindLiveObjects: 0.075858 ms CreateObjectMapping: 0.078982 ms MarkObjects: 1.955811 ms  DeleteObjects: 0.028558 ms)
-
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 957.
-Total: 2.362323 ms (FindLiveObjects: 0.079874 ms CreateObjectMapping: 0.063364 ms MarkObjects: 2.195880 ms  DeleteObjects: 0.022311 ms)
-
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 977.
-Total: 2.185171 ms (FindLiveObjects: 0.074519 ms CreateObjectMapping: 0.066487 ms MarkObjects: 2.021406 ms  DeleteObjects: 0.022311 ms)
-
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 96c -> priority: 1 
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1698 -> priority: 1 
-Log: connection {1} has been disconnected by timeout; address {::ffff:52.86.130.215:9999}
-MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.890222 ms
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 657.
-Total: 1.068712 ms (FindLiveObjects: 0.043730 ms CreateObjectMapping: 0.033020 ms MarkObjects: 0.888437 ms  DeleteObjects: 0.103078 ms)
-
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: ec4 -> priority: 1 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: f90 -> priority: 1 
+  Thread -> id: 1e8 -> priority: 1 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2ae0 -> priority: 1 
+  Thread -> id: 1ed0 -> priority: 1 
